@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<!--引入初始化样式-->
+	<link rel="stylesheet" type="text/css" href="../css/initial.css">
+	<!--引入头尾样式-->
+	<link rel="stylesheet" type="text/css" href="../css/external/register_head.css">
+	<link rel="stylesheet" type="text/css" href="../css/external/register_foot.css">
+	<!--引入登录页面样式-->
+	<link rel="stylesheet" type="text/css" href="../css/log-in.css">
+	<!--引入固定侧边栏样式-->
+	<link rel="stylesheet" type="text/css" href="../css/external/fixation.css">
+	<!--引入JQuery库-->
+	<script type="text/javascript" src="../JQku/jquery-1.12.4.js"></script>
+	<script type="text/javascript" src="../JQku/jquery.cookie.js"></script>
+</head>
+<body>
+	<!--外部引入公共头部-->
+	<div id="head"></div>
+	<script type="text/javascript" src="../js/external/register_head.js"></script>
+	
+
+	<!-- banner 图与登录框-->
+	<div class="banner">
+		<!--包含框， 自动居中-->
+		<div class="ban">
+			<!--覆盖 banner 超链接-->
+			<a href="#" class="ban-a"></a>
+			<!--登录区-->
+			<div class="from">
+				<!--可跳转到注册页面-->
+				<div class="wel">
+					<span class="wel-left">欢迎登录药房网商城</span>
+					<span class="wel-right">
+						没有账号？<a href="sign-in.html" class="wel-a">立即注册</a>
+					</span>
+				</div>
+				<!--用户名输入框-->
+				<div class="wel user">
+					<i class="user-i"></i>
+					<input type="text" name="username" placeholder="用户名 / 已验证邮箱或手机" class="ipt ipt-name">
+				</div>
+				<!--密码输入框-->
+				<div class="wel user pwd">
+					<i class="pwd-i"></i>
+					<input type="password" name="username" placeholder="登录密码" class="ipt ipt-pwd">
+				</div>
+				<!--验证码框-->
+				<div class="wel verify">
+					<div class="verify-txt"></div>
+					<div class="verify-val"></div>
+					<div class="verify"></div>
+				</div>
+				<!---->
+				<div class="wel check">
+					<div class="ckbox">
+						<div class="ck"></div>记住用户名
+					</div>
+					<a href="#" class="ck-a">忘记密码？</a>
+				</div>
+				<!--错误提示区-->
+				<div class="text">
+					<span class="txt-span"></span>
+					<span>请输入完整用户登录信息！</span>
+				</div>
+				<!--登录按钮-->
+				<div class="wel log">
+					<button>立即登录</button>
+				</div>
+				<!---->
+				<div class="wel in">
+					使用其它方式登录：
+				</div>
+				<!--其他登录方式-->
+				<div class="else">
+					<a href="#" class="QQ"></a>
+					<a href="#" class="WX"></a>
+					<a href="#" class="ZFB"></a>
+					<a href="#" class="WB"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../js/log-in.js"></script>
+
+	<!--引入脚部内容-->
+	<div id="footer"></div>
+	<script type="text/javascript" src="../js/external/register_foot.js"></script>
+
+	<!--引入固定侧边栏内容-->
+	<div id="fixation"></div>
+	<script type="text/javascript" src="../js/external/fixation.js"></script>
+</body>
+</html>

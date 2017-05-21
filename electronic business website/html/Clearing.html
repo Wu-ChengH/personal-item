@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<!--引入初始化样式-->
+	<link rel="stylesheet" type="text/css" href="../css/initial.css">
+	<!--引入尾样式-->
+	<link rel="stylesheet" type="text/css" href="../css/external/index_foot.css">
+	<!--引入注册页面样式-->
+	<link rel="stylesheet" type="text/css" href="../css/Clearing.css">
+	<!--引入固定侧边栏样式-->
+	<link rel="stylesheet" type="text/css" href="../css/external/fixation.css">
+	<!--引入JQuery库-->
+	<script type="text/javascript" src="../JQku/jquery-1.12.4.js"></script>
+	<script type="text/javascript" src="../JQku/jquery.cookie.js"></script>
+</head>
+<body>
+	<!--引入固定侧边栏内容-->
+	<div id="fixation"></div>
+	<script type="text/javascript" src="../js/external/fixation.js"></script>
+
+	<!--头部导航内容-->
+	<div class="head">
+		<div class="container">
+			<ul class="head_left">
+				<li>
+					<i class="sc"></i>
+					<a href="#">收藏药房网商城</a>
+					<s></s>
+				</li>
+				<li class="head-wx">
+					<i class="wx"></i>
+					<a href="#">微信查价</a>
+					<s></s>
+					<div class="left-WX">
+						<img src="../imgs/index/icon_wx_big.jpg">
+						<p>微信扫描二维码，查药比价更方便！</p>
+					</div>
+				</li>
+				<li class="head-App">
+					<i class="sj"></i>
+					<a href="#">手机APP</a>
+					<div class="left-APP">
+						<img src="../imgs/index/icon_app_big.png">
+						<p>药房网商城App，首次下单送5元</p>
+					</div>
+				</li>
+			</ul>
+			<ul class="head_right">
+				<li class="li_nav">
+					<span href="#" id="nav">网站导航</span><i class="nav"></i>
+					<div id="sub-nav" class="sub-nav">
+						<div class="nav_left">
+							<h2 class="h2">健康咨询</h2>
+							<a href="#">医药资讯</a>
+							<a href="#">疾病知识</a>
+							<a href="#">用药指导</a>
+							<a href="#">健康问答</a>
+							<a href="#">疾病症状库</a>
+						</div>
+						<div class="nav_right">
+							<h2 class="h2">特色服务</h2>
+							<a href="#">健康专题</a>
+							<a href="#">健康百科</a>
+							<a href="#">医院大全</a>
+							<a href="#">药房联盟</a>
+						</div>
+					</div>
+				</li>
+				<li class="head-first">
+					<a href="#">客服中心</a>
+				</li>
+				<li>
+					<a href="#">收藏夹</a>
+					<s></s>
+				</li>
+				<li class="head-gr">
+					<a href="#" class="grzx">个人中心</a>
+					<i class="gr"></i>
+					<s></s>
+					<ul class="hide-gr">
+						<a href="#">需求管理</a>
+						<a href="#">地址管理</a>
+						<a href="#">我的咨询</a>
+						<a href="#">我的问答</a>
+						<a href="#">最近浏览</a>
+					</ul>
+				</li>
+				<li class="head-car">
+					<i class="car"></i>
+					<a href="#">需求单<span>（0）</span></a>
+				</li>
+				<li class="head-register">
+					<a href="log-in.html">登录</a><b>/</b> 
+					<a href="sign-in.html">免费注册</a>
+					<div class="wcom">您好，<a></a><button class="quit">[退出]</button></div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- logo 图区-->
+	<div class="logo-big">
+		<div class="logo">
+			<a href="index.html" class="logo-a"></a>
+			<p class="logo-p" id="logo-p">核对信息</p>
+			<div class="condition bgPs1"></div>
+		</div>
+	</div>
+	
+	<!--结算-->
+	<div class="goods-car" style="display: none;">
+		<div class="goods">
+			<div class="goods-all">
+				<div class="goods-info">
+					<img src="" class="info-img">
+					<span class="info-name"></span>
+					<span class="info-gg"></span>
+					<span class="x">X</span>
+					<span class="info-num"></span>
+					<span class="info-all">合计：￥</span>
+					<span class="info-money"></span>
+				</div>
+			</div>
+			<ul class="form">
+				<li>
+					<span class="form-val">
+						收货地址 :
+					</span>
+					<span class="name-span">
+						<select id="province"></select>
+						<select id="city"  style="display: none;"></select>
+						<select id="district"  style="display: none;"></select>
+						<span class="oninfo-hint" style="display: none;">
+							<span>请选择您的所在地区</span>
+						</span>
+					</span>
+				</li>
+				<li>
+					<span class="form-val">
+						详细地址 :
+					</span>
+					<span class="name-span">
+						<input type="text" name="name" class="form-ipt addr" disabled="disabled" placeholder="填写详细的街道名及门牌号、楼宇名及房间号" style="background-color: #fff; width: 440px;">
+						<span class="err oninfo-hint"  style="display: none;">
+							<span>请输入完整的详细地址信息，两边不能有空符号</span>
+						</span>
+					</span>
+				</li>
+			</ul>
+			<button class="gyes">确定</button>
+			<button class="gno">取消</button>
+		</div>
+	</div>
+
+	<!--结算完成-->
+	<div class="ok">
+		<p>购买完成！<a href="index.html">前往首页</a> <a href="car.html">前往购物车</a></p>
+	</div>
+
+	
+
+
+	<!--引入首页尾部内容-->
+	<div id="index_foot"></div>
+	<script type="text/javascript" src="../js/external/index_foot.js"></script>
+
+	<script type="text/javascript" src="../js/Clearing.js"></script>
+</body>
+</html>
