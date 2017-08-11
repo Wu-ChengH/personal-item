@@ -1,4 +1,3 @@
-debugger;
 export const chengdu = {
 	"type": "FeatureCollection",
 	"features": [{
